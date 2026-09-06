@@ -1,3 +1,5 @@
 .env
 __pycache__/
 *.pyc
+usage_log.csv
+agents.db

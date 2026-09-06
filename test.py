@@ -23,7 +23,8 @@ def get_company_symbol(company: str) -> str:
 
 test_agent=Agent(
     model=Groq(
-    id="qwen/qwen3.6-27b"),
+    id="qwen/qwen3.6-27b",
+    max_tokens=500),
     tools=[YFinanceTools(
         stock_price=True,
         analyst_recommendations=True,
